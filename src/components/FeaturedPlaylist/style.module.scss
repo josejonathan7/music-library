@@ -1,0 +1,47 @@
+
+.container {
+	width: 100%;
+	padding-top: 3%;
+
+	h1 {
+		color: #E5E5E7;
+		font-size: 20px;
+	}
+}
+
+
+.slidesContainer {
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	gap: 80px;
+}
+
+.slide {
+	width: 100%;
+
+	img {
+		width: 125%;
+		height: 70%;
+		border-radius: 8px;
+	}
+
+	div {
+		line-height: 60%;
+
+		p:first-child {
+			font-size: 20px;
+			font-weight: bold;
+			color: #E5E5E7;
+		}
+
+		p:last-child {
+			font-size: 14px;
+			color: #808080;
+			opacity: 0.9;
+		}
+
+	}
+}
