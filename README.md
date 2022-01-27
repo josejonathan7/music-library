@@ -27,6 +27,7 @@
   * [Icones](#icones)
   * [Tipo de fonte](#tipo-de-fonte)
 * [Compartilhe](#compartilhe)
+* [Executando a Imagem Docker](#Docker)
 
 # Devchallenge
 <a href="https://devchallenge.now.sh/"> DevChallenge</a> permite que você evolua suas skills como programador! Participe da nossa <a href="https://discord.gg/yvYXhGj">comunidade</a> o/
@@ -76,3 +77,20 @@ Inicie seu projeto utilizando esse template no seu github como um repositório p
 Faça um print, gif ou vídeo e compartilhe o resultado no seu Linkedin<br>
 
 Desafio criado por  <a href="https://www.linkedin.com/in/emmanuel-messias-535621127/">Emmanuel Messias</a> :)
+
+
+# Docker
+
+para executar a imagem docker basta executar:
+
+`docker container run --network=host -d josejonathan/music-library-page:latest`
+
+ou caso deseje criar a imagem na sua maquina local, de um git clone e depois execute no diretório raiz:
+
+`docker build -t nomeDaSuaImagem .`
+
+e depois :
+
+`docker container run --network=host -d nomeDaSuaImagem`
+
+em ambos os casos o projeto vai rodar no localhost:3000
