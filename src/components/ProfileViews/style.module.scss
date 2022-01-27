@@ -1,0 +1,72 @@
+
+.container {
+	width: 30%;
+
+	h2 {
+		color: #E5E5E7;
+	}
+}
+
+.profileBodyContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.profileContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	p {
+		width: 20%;
+		color: #808080;
+		font-size: 0.875rem;
+		opacity: 0.3;
+	}
+}
+
+.imageTextContainer {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1.25rem;
+
+	img {
+		width: 25%;
+		height: 5rem;
+		border-radius: 0.5rem;
+		opacity: 0.7;
+	}
+}
+
+.textContainer {
+	width: 100%;
+
+	p {
+		width: 100%;
+		color: #808080;
+		opacity: 0.9;
+		font-size: 1.25rem;
+	}
+
+	p:last-child {
+		font-size: 0.875rem;
+		opacity: 0.3;
+	}
+}
+
+.profileContainer:hover {
+
+	img {
+		opacity: 1;
+	}
+
+	p {
+		color: #E5E5E7;
+		opacity: 1;
+	}
+}

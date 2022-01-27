@@ -5,7 +5,7 @@
 
 	h1 {
 		color: #E5E5E7;
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 }
 
@@ -16,29 +16,35 @@
 	flex-direction: row;
 	overflow-y: hidden;
 	overflow-x: scroll;
-	gap: 80px;
+	gap: 8.125rem;
 }
 
 .slide {
 	width: 100%;
 
 	img {
-		width: 125%;
+		width: 150%;
 		height: 70%;
-		border-radius: 8px;
+		border-radius: 0.5rem;
+	}
+
+	img:hover {
+		filter: brightness(0.8);
+		transform: scale(1.1);
 	}
 
 	div {
+		width: 150%;
 		line-height: 60%;
 
 		p:first-child {
-			font-size: 20px;
+			font-size: 1.25rem;
 			font-weight: bold;
 			color: #E5E5E7;
 		}
 
 		p:last-child {
-			font-size: 14px;
+			font-size: 0.875rem;
 			color: #808080;
 			opacity: 0.9;
 		}

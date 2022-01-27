@@ -1,0 +1,54 @@
+.container {
+	width: 50%;
+
+	h2 {
+		color: #E5E5E7;
+	}
+}
+
+.trackBodyContainer {
+	display: flex;
+	flex-direction: row;
+	gap: 1.875rem;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.trackContainer {
+	width: 12.5rem;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		width: 9.375rem;
+		height: 9.375rem;
+		border-radius: 0.5rem;
+		opacity: 0.7;
+	}
+}
+
+.textContainer {
+	line-height: 40%;
+
+	p {
+		color: #E5E5E7;
+		opacity: 0.7;
+	}
+
+	p:last-child {
+		font-size: 0.75rem;
+		opacity: 0.5;
+	}
+}
+
+.trackContainer:hover {
+
+	img {
+		opacity: 1;
+	}
+
+	p {
+		opacity: 1;
+	}
+}

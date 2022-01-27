@@ -1,6 +1,6 @@
 import React from 'react';
 import {BiSearchAlt} from 'react-icons/bi';
-import { Menu, FeaturedPlaylist } from '../../components';
+import { Menu, FeaturedPlaylist, ProfileViews, Tracks } from '../../components';
 import style from './style.module.scss';
 
 
@@ -18,6 +18,12 @@ export default function Home () {
 				</div>
 
 				<FeaturedPlaylist />
+
+				<div className={style.viewsTracksContainer}>
+					<ProfileViews />
+
+					<Tracks />
+				</div>
 
 			</div>
 
