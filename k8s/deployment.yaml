@@ -1,0 +1,45 @@
+
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: music-library-page
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: music-library-page
+
+  template:
+    metadata:
+      labels:
+        app: music-library-page
+
+    spec:
+      containers:
+        - name: music-library-page
+          image: josejonathan/music-library-page:latest
+          ports:
+           - containerPort: 3000
+
+---
+
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: music-library-page
+
+spec:
+  selector:
+      app: music-library-page
+
+  ports:
+    - port: 3000
+      targetPort: 3000
+      nodePort: 30000
+  type: NodePort
